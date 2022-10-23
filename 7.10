@@ -1,0 +1,10 @@
+sample = input('Enter name of file to open :\n')
+n_file=open(sample)
+n_line=n_file.readlines()
+sum=0
+print()
+for i in n_line:
+    i=float(i)
+    sum+=i
+print("The total of all lines is {} \n".format(sum))
+n_file.close()
